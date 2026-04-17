@@ -191,24 +191,33 @@
   document.addEventListener('click', function (e) {
     const target = e.target;
 
-    /* ── 1. CTA-knappar (.btn, .nav-btn, .mobile-cta) ── */
+    /* ── 1. CTA-knappar (.btn, .nav-btn, .mobile-cta) ──────────────
+       Kopplas till: alla <a class="btn">, <a class="nav-btn">,
+       <a class="mobile-cta"> och <button class="btn"> på sidan.
+       destination = href för länkar, 'modal' för knappar utan href. */
     const btn = target.closest('.btn, .nav-btn, .mobile-cta');
     if (btn) {
+      const href = btn.getAttribute('href');
       gtag('event', 'cta_click', {
         button_text: getButtonText(btn),
-        section:     getSection(btn)
+        section:     getSection(btn),
+        destination: href || 'modal'
       });
     }
 
-    /* ── 2. Bokningsklick – alla Calendly-länkar ── */
+    /* ── 2. Bokningsklick – alla Calendly-länkar ────────────────────
+       Kopplas till: alla <a href="*calendly.com*"> på sidan.
+       Triggas utöver cta_click (dessa är separata event-typer). */
     const link = target.closest('a[href]');
     if (link && link.href.includes('calendly.com')) {
       gtag('event', 'booking_click', {
-        section: getSection(link)
+        section:     getSection(link),
+        button_text: getButtonText(link)
       });
     }
 
-    /* ── 3. Visa referens ── */
+    /* ── 3. Visa referens ───────────────────────────────────────────
+       Kopplas till: <a data-ref-open="..."> på varje referenskort. */
     const refBtn = target.closest('[data-ref-open]');
     if (refBtn) {
       gtag('event', 'reference_open', {
@@ -243,8 +252,10 @@
     document.body.style.overflow = 'hidden';
     setTimeout(() => document.getElementById('kf-namn')?.focus(), 80);
 
+    /* ── 4. calculator_open ────────────────────────────────────────
+       Kopplas till: #kalkyl-open-btn (knappen "Få en kalkyl"). */
     if (typeof gtag === 'function') {
-      gtag('event', 'kalkyl_open');
+      gtag('event', 'calculator_open');
     }
   }
 
@@ -304,8 +315,10 @@
     formWrap.hidden = true;
     success.hidden  = false;
 
+    /* ── 5. calculator_submit ──────────────────────────────────────
+       Kopplas till: #kalkyl-form submit-event. */
     if (typeof gtag === 'function') {
-      gtag('event', 'kalkyl_submit', {
+      gtag('event', 'calculator_submit', {
         company: foretag.value,
         section: 'kalkyl'
       });
