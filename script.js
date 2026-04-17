@@ -149,7 +149,9 @@
     milestones.forEach(m => {
       if (pct >= m && !reached.has(m)) {
         reached.add(m);
-        gtag('event', 'scroll_depth', { depth: m + '%' });
+        const p = { depth: m + '%' };
+        console.log('[GA4] scroll_depth', p);
+        gtag('event', 'scroll_depth', p);
       }
     });
 
@@ -198,11 +200,9 @@
     const btn = target.closest('.btn, .nav-btn, .mobile-cta');
     if (btn) {
       const href = btn.getAttribute('href');
-      gtag('event', 'cta_click', {
-        button_text: getButtonText(btn),
-        section:     getSection(btn),
-        destination: href || 'modal'
-      });
+      const p = { button_text: getButtonText(btn), section: getSection(btn), destination: href || 'modal' };
+      console.log('[GA4] cta_click', p);
+      gtag('event', 'cta_click', p);
     }
 
     /* ── 2. Bokningsklick – alla Calendly-länkar ────────────────────
@@ -210,19 +210,18 @@
        Triggas utöver cta_click (dessa är separata event-typer). */
     const link = target.closest('a[href]');
     if (link && link.href.includes('calendly.com')) {
-      gtag('event', 'booking_click', {
-        section:     getSection(link),
-        button_text: getButtonText(link)
-      });
+      const p = { section: getSection(link), button_text: getButtonText(link) };
+      console.log('[GA4] booking_click', p);
+      gtag('event', 'booking_click', p);
     }
 
     /* ── 3. Visa referens ───────────────────────────────────────────
        Kopplas till: <a data-ref-open="..."> på varje referenskort. */
     const refBtn = target.closest('[data-ref-open]');
     if (refBtn) {
-      gtag('event', 'reference_open', {
-        reference_name: refBtn.dataset.refOpen
-      });
+      const p = { reference_name: refBtn.dataset.refOpen };
+      console.log('[GA4] reference_open', p);
+      gtag('event', 'reference_open', p);
     }
   });
 })();
@@ -255,6 +254,7 @@
     /* ── 4. calculator_open ────────────────────────────────────────
        Kopplas till: #kalkyl-open-btn (knappen "Få en kalkyl"). */
     if (typeof gtag === 'function') {
+      console.log('[GA4] calculator_open');
       gtag('event', 'calculator_open');
     }
   }
@@ -318,10 +318,9 @@
     /* ── 5. calculator_submit ──────────────────────────────────────
        Kopplas till: #kalkyl-form submit-event. */
     if (typeof gtag === 'function') {
-      gtag('event', 'calculator_submit', {
-        company: foretag.value,
-        section: 'kalkyl'
-      });
+      const p = { company: foretag.value, section: 'kalkyl' };
+      console.log('[GA4] calculator_submit', p);
+      gtag('event', 'calculator_submit', p);
     }
   });
 })();
