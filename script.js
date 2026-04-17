@@ -266,6 +266,7 @@
   }
 
   openBtn.addEventListener('click', openModal);
+  document.getElementById('hero-kalkyl-btn')?.addEventListener('click', openModal);
   closeBtn?.addEventListener('click', closeModal);
   overlay?.addEventListener('click', closeModal);
   successClose?.addEventListener('click', closeModal);
