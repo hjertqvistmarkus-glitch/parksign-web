@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Originala PNG-filer ersatta av optimerade JPG-versioner
+hero-bg.png
+hero-bg-2.png
+hero-bg-3.png
+ref-borlange.png
+ref-erikslund.png
+ref-ikea.png
+ref-media/*.png
+
+# Råmaterial-mappar (används inte av sajten)
+Referens ICA Maxi Borlänge/
+Referens ICA Maxi Erikslund/
+Referens IKEA Örebro/
+
+# Gamla versioner
+parksign-v7_1.html
+
+# Claude Code
+.claude/

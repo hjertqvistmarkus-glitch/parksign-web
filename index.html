@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ParkSign – Digitala skyltar som genererar intäkter</title>
+  <meta name="description" content="Förvandla er parkeringsyta till en intäktskälla. ParkSign installerar digitala LED-skyltar vid kommersiella parkeringar – med annonsintäkter, egna kampanjytor och 5 års garanti. Boka en presentation.">
+  <meta property="og:title" content="ParkSign – Digitala skyltar som genererar intäkter">
+  <meta property="og:description" content="Ersätt statiska parkeringsskyltar med digitala LED-skärmar. Ni får annonsintäkter, egna kampanjytor och en moderniserad anläggning.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2QMWJ0XQ8Z"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2QMWJ0XQ8Z');
+  </script>
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window,document,"clarity","script","wc8becr51z");
+  </script>
+
+  <!-- Calendly CSS -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════════════════
+     NAVIGATION
+══════════════════════════════════════════════════════════ -->
+<nav id="nav">
+  <a href="#" class="nav-logo" aria-label="ParkSign – startsida">
+    <img src="logo_vit.png" alt="ParkSign logotyp" width="120" height="36">
+  </a>
+
+  <div class="nav-links" id="nav-links">
+    <a href="#roi">Ekonomi</a>
+    <a href="#referenser">Referenser</a>
+    <a href="#losningen">Lösningen</a>
+    <a href="#faq">FAQ</a>
+    <a href="#kontakt">Kontakt</a>
+  </div>
+
+  <a href="https://calendly.com/markus-hjertqvist-viriba/30min"
+     class="nav-btn"
+     target="_blank"
+     rel="noopener">
+    Boka möte
+  </a>
+
+  <button class="nav-hamburger" id="nav-hamburger" aria-label="Öppna meny" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<!-- Mobile overlay menu -->
+<div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+  <div class="mobile-nav-inner">
+    <a href="#roi"          class="mobile-link">Ekonomi</a>
+    <a href="#referenser"  class="mobile-link">Referenser</a>
+    <a href="#losningen"   class="mobile-link">Lösningen</a>
+    <a href="#faq"       class="mobile-link">FAQ</a>
+    <a href="#kontakt"   class="mobile-link">Kontakt</a>
+    <a href="https://calendly.com/markus-hjertqvist-viriba/30min"
+       class="mobile-cta"
+       target="_blank"
+       rel="noopener">
+      Boka möte →
+    </a>
+  </div>
+</div>
+
+<main>
+
+<!-- ══════════════════════════════════════════════════════════
+     HERO
+══════════════════════════════════════════════════════════ -->
+<section id="hero">
+  <!-- ──────────────────────────────────────────────────────
+       Hero: statisk bakgrundsbild – ger maximal läsbarhet
+       och stabilitet på alla enheter.
+       Byt ut "hero-bg-src" nedan om du vill byta bild.
+  ────────────────────────────────────────────────────────── -->
+  <div class="hero-media">
+    <img class="hero-bg hero-slide hero-slide-1" src="hero-bg.jpg"   alt="ParkSign vid ICA Maxi Borlänge" loading="eager" fetchpriority="high">
+    <img class="hero-bg hero-slide hero-slide-2" src="hero-bg-2.jpg" alt="ParkSign vid IKEA Örebro"       loading="eager">
+    <img class="hero-bg hero-slide hero-slide-3" src="hero-bg-3.jpg" alt="ParkSign vid ICA Maxi Borlänge" loading="eager">
+    <div class="hero-overlay-grad" aria-hidden="true"></div>
+  </div>
+
+  <div class="wrap hero-wrap">
+    <div class="hero-content">
+      <img src="logo_vit.png" alt="ParkSign" class="hero-logo fi" width="140">
+      <div class="eyebrow fi">Digital kommunikation &nbsp;·&nbsp; DOOH DVH &nbsp;·&nbsp; DOOH Retail</div>
+
+      <h1 class="fi d1">
+        Gör er parkering till<br>
+        en <em>ny intäktskälla</em>
+      </h1>
+
+      <p class="hero-lead fi d2">
+        Digitala LED-skärmar som driver försäljning, genererar annonsintäkter
+        och moderniserar er anläggning – utan extra arbete för er.
+      </p>
+
+      <ul class="hero-vals fi d3" aria-label="Nyckelfördelar">
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Nya intäkter från extern annonsering
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Påverka kunden före butikens entré
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Vi sköter installation, drift och försäljning
+        </li>
+      </ul>
+
+      <div class="hero-ctas fi d4">
+        <a href="https://calendly.com/markus-hjertqvist-viriba/30min"
+           class="btn btn-g btn-lg"
+           target="_blank"
+           rel="noopener">
+          Boka en presentation →
+        </a>
+        <a href="#roi" class="btn btn-ghost">Se hur kalkylen fungerar</a>
+      </div>
+
+      <div class="hero-proof fi d5">
+        <span class="proof-label">Installerat vid</span>
+        <div class="proof-logos">
+          <img src="ICA-logo.png" alt="ICA" class="proof-logo">
+          <img src="IKEAlogo.png" alt="IKEA" class="proof-logo proof-logo-ikea">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════════
+     STATS / NYCKELTAL
+══════════════════════════════════════════════════════════ -->
+<section id="stats-bar">
+  <div class="wrap stats-grid">
+    <div class="stat-item fi">
+      <div class="stat-val">18–36<span>mån</span></div>
+      <div class="stat-label">Återbetalningstid</div>
+    </div>
+    <div class="stat-item fi d1">
+      <div class="stat-val">20<span>platser</span></div>
+      <div class="stat-label">Annonsplatser per skärm</div>
+    </div>
+    <div class="stat-item fi d2">
+      <div class="stat-val">60<span>mån</span></div>
+      <div class="stat-label">LED-garanti</div>
+    </div>
+    <div class="stat-item fi d3">
+      <div class="stat-val">0<span>kr</span></div>
+      <div class="stat-label">Servicekostnad per år</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════════
+     ROI / EKONOMI
+══════════════════════════════════════════════════════════ -->
+<section id="roi">
+  <div class="wrap">
+    <div class="kicker kicker-d fi">Affärsvärde</div>
+    <h2 class="fi d1">En investering<br>som betalar sig</h2>
+    <p class="lead-d fi d2">
+      Förvandla parkeringen till en intäktskälla – utan extra arbete för er.
+    </p>
+
+    <div class="kpi-grid fi d3">
+      <div class="kpi dark">
+        <div class="kpi-val">18–36 <span>mån</span></div>
+        <div class="kpi-title">Återbetalningstid</div>
+        <div class="kpi-desc">
+          Garanterad ROI via annonsintäkter från ett etablerat annonsnätverk med
+          nationella och lokala varumärken.
+        </div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-val">20 <span>st</span></div>
+        <div class="kpi-title">Annonsplatser per skärm</div>
+        <div class="kpi-desc">
+          10 egna kampanjbudskap + 10 externa annonsörer som betalar löpande – varje månad,
+          år efter år.
+        </div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-val">60 <span>mån</span></div>
+        <div class="kpi-title">LED-garanti</div>
+        <div class="kpi-desc">
+          Fem år full garanti. Kostnadsfri service och support ingår alltid –
+          inga dolda kostnader.
+        </div>
+      </div>
+    </div>
+
+    <div class="roi-row fi d4">
+      <div class="roi-item">
+        <div class="roi-dot"></div>
+        <h4>Intäkter från externa annonsörer</h4>
+        <p>Etablerade varumärken betalar för exponering nära köptillfället. Vi sköter hela
+           annonsförsäljningen – ni behöver inte lyfta ett finger.</p>
+      </div>
+      <div class="roi-item">
+        <div class="roi-dot"></div>
+        <h4>Egna kampanjer driver merförsäljning</h4>
+        <p>Rätt budskap vid entrén ökar snittkvittot och driver impulsköp. Dynamiska
+           budskap anpassar sig automatiskt efter tid, väder och sortiment.</p>
+      </div>
+      <div class="roi-item">
+        <div class="roi-dot"></div>
+        <h4>Löpande intäkter – även efter ROI</h4>
+        <p>Varje månad efter återbetalning är ren vinst. Annonsnätverket genererar intäkter
+           utan slutdatum – så länge er parkering har besökare.</p>
+      </div>
+    </div>
+
+    <div class="roi-cta fi d5">
+      <a href="https://calendly.com/markus-hjertqvist-viriba/30min"
+         class="btn btn-dark"
+         target="_blank"
+         rel="noopener">
+        Räkna på er potential →
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════════
+     REFERENSER
+══════════════════════════════════════════════════════════ -->
+<section id="referenser">
+  <div class="wrap">
+    <div class="kicker fi">Referenser</div>
+    <h2 class="fi d1">Några av våra <em>installationer</em></h2>
+    <p class="lead fi d2">Vi finns på flertalet platser i Sverige och växer för varje dag.</p>
+
+    <!-- ─── Stor featured referens: Erikslund ─── -->
+    <div class="ref-featured fi d3">
+      <div class="ref-featured-media">
+        <video
+          src="ref-media/erikslund-2.mp4"
+          autoplay muted loop playsinline
+          class="ref-featured-video">
+        </video>
+      </div>
+      <div class="ref-featured-body">
+        <h3>ICA Maxi Erikslund, Västerås</h3>
+        <p>En installation i stark handelsmiljö där skärmarna används både för butikens egna kampanjer och som kanal för extern annonsering.</p>
+        <div class="ref-card-tags">
+          <span class="ref-kicker-tag">Digitala kampanjer</span>
+          <span class="ref-kicker-tag">Försäljningsökning</span>
+          <span class="ref-kicker-tag">Varumärkesboost</span>
+          <span class="ref-kicker-tag">Nya intäkter</span>
+        </div>
+        <a href="ref-media/erikslund-1.jpg"
+           target="_blank"
+           rel="noopener"
+           class="btn btn-ghost ref-open-btn"
+           data-ref-open="ICA Maxi Erikslund">
+          Visa referens →
+        </a>
+      </div>
+    </div>
+
+    <!-- ─── Två mindre referenskort ─── -->
+    <div class="ref-grid fi d4">
+
+      <article class="ref-card">
+        <div class="ref-card-media">
+          <img src="ref-borlange.jpg" alt="ParkSign vid ICA Maxi Borlänge" loading="lazy" class="ref-card-img">
+        </div>
+        <div class="ref-card-body">
+          <h3>ICA Maxi Borlänge</h3>
+          <p>Digital skyltning som skapar stark synlighet redan på parkeringen och genererar nya intäkter via extern annonsering.</p>
+          <div class="ref-card-tags">
+            <span class="ref-kicker-tag">Digitala kampanjer</span>
+            <span class="ref-kicker-tag">Försäljningsökning</span>
+            <span class="ref-kicker-tag">Varumärkesboost</span>
+            <span class="ref-kicker-tag">Nya intäkter</span>
+          </div>
+          <a href="ref-media/borlange-1.jpg"
+             target="_blank"
+             rel="noopener"
+             class="btn btn-ghost ref-open-btn"
+             data-ref-open="ICA Maxi Borlänge">
+            Visa referens →
+          </a>
+        </div>
+      </article>
+
+      <article class="ref-card">
+        <div class="ref-card-media">
+          <img src="ref-ikea.jpg" alt="ParkSign vid IKEA Örebro" loading="lazy" class="ref-card-img">
+        </div>
+        <div class="ref-card-body">
+          <h3>IKEA Örebro</h3>
+          <p>En välbesökt destination där digitala skärmar ger maximal exponering mot tusentals besökare – varje dag, året runt.</p>
+          <div class="ref-card-tags">
+            <span class="ref-kicker-tag">Digitala kampanjer</span>
+            <span class="ref-kicker-tag">Försäljningsökning</span>
+            <span class="ref-kicker-tag">Varumärkesboost</span>
+            <span class="ref-kicker-tag">Nya intäkter</span>
+          </div>
+          <a href="ref-media/ikea-1.jpg"
+             target="_blank"
+             rel="noopener"
+             class="btn btn-ghost ref-open-btn"
+             data-ref-open="IKEA Örebro">
+            Visa referens →
+          </a>
+        </div>
+      </article>
+
+    </div><!-- /ref-grid -->
+
+    <!-- CTA under referenssektionen -->
+    <div class="ref-cta-block fi d5">
+      <img src="Markus.jpeg" alt="Markus Hjertqvist" class="ref-cta-avatar">
+      <h3>Se vad er parkering kan generera</h3>
+      <p>Vi visar exakt intäktspotential, placering av skärmar och exempel från liknande anläggningar.</p>
+      <a href="https://calendly.com/markus-hjertqvist-viriba/30min"
+         class="btn btn-g"
+         target="_blank"
+         rel="noopener">
+        Boka en presentation
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════════
+     LÖSNINGEN
+══════════════════════════════════════════════════════════ -->
+<section id="losningen">
+  <div class="wrap">
+    <div class="kicker fi">Vår lösning</div>
+    <h2 class="fi d1">Ni gör ingenting –<br><em>vi sköter allt</em></h2>
+    <p class="lead fi d2">
+      En komplett helhetslösning – från bygglov och installation till
+      annonsförsäljning och löpande support.
+    </p>
+
+    <div class="sol-grid fi d3">
+
+      <div class="sol-card">
+        <div class="sol-icon">
+          <!-- Projektering icon -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+            <line x1="16" y1="13" x2="8" y2="13"/>
+            <line x1="16" y1="17" x2="8" y2="17"/>
+          </svg>
+        </div>
+        <h3>Projektering &amp; bygglov</h3>
+        <p>Vi hanterar alla tillstånd, myndighetskontakter och teknisk projektering.
+           Ni lägger inte en timme på det.</p>
+      </div>
+
+      <div class="sol-card">
+        <div class="sol-icon">
+          <!-- Installation icon -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+            <line x1="8" y1="21" x2="16" y2="21"/>
+            <line x1="12" y1="17" x2="12" y2="21"/>
+          </svg>
+        </div>
+        <h3>Installation &amp; drift</h3>
+        <p>Fundament, el, montering och driftsättning. Komplett leverans – skärmen är
+           igång från dag ett, utan störning för er verksamhet.</p>
+      </div>
+
+      <div class="sol-card">
+        <div class="sol-icon">
+          <!-- Kampanj icon -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+          </svg>
+        </div>
+        <h3>Kampanjplanering &amp; innehåll</h3>
+        <p>Vi hjälper er planera årets kampanjer. Dynamiska budskap baserade på tid,
+           väder och lagersaldo – helt automatiskt, dygnet runt.</p>
+      </div>
+
+      <div class="sol-card">
+        <div class="sol-icon">
+          <!-- Intäkter icon -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="12" y1="1" x2="12" y2="23"/>
+            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+          </svg>
+        </div>
+        <h3>Annonsförsäljning via nätverk</h3>
+        <p>Vi säljer annonsutrymme till externa varumärken. Ni äger ytan och får
+           intäkterna – vi sköter hela annonsaffären.</p>
+      </div>
+
+      <div class="sol-card">
+        <div class="sol-icon">
+          <!-- Support icon -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+        <h3>Service, support &amp; uppföljning</h3>
+        <p>Kostnadsfri service ingår alltid. Månadsrapport med intäkter, exponeringar
+           och kampanjresultat levereras automatiskt.</p>
+      </div>
+
+      <div class="sol-card sol-card-accent">
+        <div class="sol-icon sol-icon-accent">
+          <!-- Dynamisk icon -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+        </div>
+        <h3>Dynamiska &amp; smarta budskap</h3>
+        <p>Skärmen anpassar sig automatiskt. Grillprodukter vid 25°, varm soppa när
+           det regnar. Noll manuell hantering.</p>
+      </div>
+
+    </div><!-- /sol-grid -->
+
+    <div class="sol-cta-bar fi d4">
+      <div class="sol-cta-text">
+        <h4>Ni äger ytan. Vi driver affären.</h4>
+        <p>1 st ParkSign komplett: 399 000 kr &nbsp;·&nbsp; 0 kr service &amp; support &nbsp;·&nbsp; Enda tillkommande kostnad: inkoppling av el</p>
+      </div>
+      <a href="https://calendly.com/markus-hjertqvist-viriba/30min"
+         class="btn btn-g"
+         target="_blank"
+         rel="noopener">
+        Boka presentation →
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════════
+     SEKUNDÄR CTA – KALKYL
+══════════════════════════════════════════════════════════ -->
+<section id="kalkyl">
+  <div class="wrap kalkyl-wrap">
+
+    <div class="kalkyl-glow" aria-hidden="true"></div>
+
+    <div class="kalkyl-content">
+      <div class="kicker fi">Snabbkalkyl</div>
+      <h2 class="fi d1">Se vad er parkering<br>kan generera</h2>
+      <p class="kalkyl-lead fi d2">
+        Få en uppskattning av intäktspotential baserat på er anläggning.
+      </p>
+      <button class="btn btn-g btn-lg fi d3" id="kalkyl-open-btn">
+        Få en kalkyl
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── Kalkyl-modal ─────────────────────────────────────── -->
+<div id="kalkyl-modal"
+     class="kalkyl-modal"
+     aria-hidden="true"
+     role="dialog"
+     aria-modal="true"
+     aria-labelledby="kalkyl-modal-title">
+
+  <div class="kalkyl-overlay" id="kalkyl-overlay"></div>
+
+  <div class="kalkyl-card" role="document">
+    <button class="kalkyl-close" id="kalkyl-close" aria-label="Stäng">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <line x1="18" y1="6" x2="6" y2="18"/>
+        <line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+
+    <!-- Formulär -->
+    <div id="kalkyl-form-wrap">
+      <div class="kalkyl-card-header">
+        <h3 id="kalkyl-modal-title">Berätta om er anläggning</h3>
+        <p>Vi återkommer med er intäktspotential inom&nbsp;1–2 dagar.</p>
+      </div>
+
+      <form class="kalkyl-form" id="kalkyl-form" novalidate>
+        <div class="kalkyl-field">
+          <label for="kf-namn">Namn</label>
+          <input type="text"  id="kf-namn"    name="namn"    placeholder="Förnamn Efternamn" required autocomplete="name">
+        </div>
+        <div class="kalkyl-field">
+          <label for="kf-email">E-post</label>
+          <input type="email" id="kf-email"   name="email"   placeholder="namn@foretag.se"   required autocomplete="email">
+        </div>
+        <div class="kalkyl-field">
+          <label for="kf-foretag">Företag</label>
+          <input type="text"  id="kf-foretag" name="foretag" placeholder="Ert företagsnamn"  required autocomplete="organization">
+        </div>
+        <button type="submit" class="btn btn-g btn-lg kalkyl-submit">
+          Skicka förfrågan →
+        </button>
+      </form>
+    </div>
+
+    <!-- Bekräftelse -->
+    <div id="kalkyl-success" class="kalkyl-success" hidden>
+      <div class="kalkyl-check">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="20 6 9 17 4 12"/>
+        </svg>
+      </div>
+      <h3>Tack!</h3>
+      <p>Vi hör av oss inom 1–2 dagar med er uppskattning.</p>
+      <button class="btn btn-ghost" id="kalkyl-success-close">Stäng</button>
+    </div>
+  </div>
+
+</div><!-- /kalkyl-modal -->
+
+
+<!-- ══════════════════════════════════════════════════════════
+     FAQ
+══════════════════════════════════════════════════════════ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="kicker kicker-d fi">Vanliga frågor</div>
+    <h2 class="fi d1">Frågor &amp; svar</h2>
+    <p class="lead-d fi d2">Allt ni behöver veta innan ett möte.</p>
+
+    <div class="faq-list fi d3">
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Hur fungerar affärsmodellen?
+          <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </button>
+        <div class="faq-a" role="region">
+          <p>En komplett ParkSign kostar 399 000 kr – inklusive skärm, fundament, montering,
+             driftsättning och löpande service &amp; support (0 kr). Enda tillkommande
+             kostnaden för er är inkoppling av el. Vi kopplar skärmen till vårt medienätverk
+             där externa annonsörer betalar löpande. Ni styr 50 % av sändningstiden för egna
+             kampanjer – resterande 50 % säljer vi till annonsörer. ROI uppnås typiskt inom
+             18–36 månader. Därefter är annonsintäkterna ren vinst, varje månad.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Hur snabbt kan vi komma igång?
+          <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </button>
+        <div class="faq-a" role="region">
+          <p>Från beslut till driftsatt skärm tar det normalt 4–8 veckor. Vi hanterar
+             all projektering, tillståndsansökan och installation. Ni behöver inte lägga
+             arbetstid på processen – vi håller er löpande uppdaterade och koordinerar
+             allt från start till mål.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Hur ser intäktspotentialen ut?
+          <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </button>
+        <div class="faq-a" role="region">
+          <p>Det beror på trafikflödet vid er anläggning och det lokala annonsklimat.
+             Generellt kan en vältrafikerad parkering generera annonsintäkter som ger
+             full ROI inom 18–36 månader. Under ett introduktionsmöte räknar vi konkret
+             på er specifika situation – utan förpliktelse.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Hur anpassas innehållet på skärmen?
+          <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </button>
+        <div class="faq-a" role="region">
+          <p>Via vår plattform kan ni enkelt ladda upp, schemalägga och styra ert eget
+             innehåll i realtid. Systemet stöder dynamiska regler – exempelvis grillprodukter
+             när temperaturen överstiger 20°, vinterdecks i november, eller kampanjpriser
+             baserade på lagersaldo. Vill ni ha hjälp med innehållsproduktion kan vi
+             ordna det med.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Fungerar det för flera anläggningar?
+          <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </button>
+        <div class="faq-a" role="region">
+          <p>Absolut. Lösningen är byggd för att skalas, oavsett om det gäller 1 eller
+             100 anläggningar. Centraliserad innehållshantering låter er styra alla
+             skärmar från ett och samma gränssnitt. Kedjemodell med samlad fakturering
+             och rapportering finns tillgänglig.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Vad händer om skärmen behöver service?
+          <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </button>
+        <div class="faq-a" role="region">
+          <p>LED-skärmen har 5 års garanti och vi erbjuder kostnadsfri service under
+             hela avtalsperioden. Vi fjärrövervakar alla skärmar och agerar proaktivt vid
+             eventuella störningar. Ni behöver aldrig kontakta ett serviceföretag eller
+             lägga tid på underhåll – det ingår i helhetslösningen.</p>
+        </div>
+      </div>
+
+    </div><!-- /faq-list -->
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════════
+     KONTAKT / SLUTLIG CTA
+══════════════════════════════════════════════════════════ -->
+<section id="kontakt">
+  <div class="wrap kontakt-wrap">
+
+    <div class="kicker fi">Ta nästa steg</div>
+    <h2 class="fi d1">Se vad er parkering<br>kan generera</h2>
+    <p class="cta-sub fi d2">
+      Vi visar hur lösningen fungerar för just er – och räknar på er potential.
+      30 minuter. Utan förpliktelse.
+    </p>
+
+    <div class="cta-actions fi d3">
+      <a href="https://calendly.com/markus-hjertqvist-viriba/30min"
+         class="btn btn-g btn-lg"
+         target="_blank"
+         rel="noopener">
+        Boka ett möte →
+      </a>
+      <span class="cta-micro">Via Calendly &nbsp;·&nbsp; Välj tid som passar er</span>
+    </div>
+
+    <div class="contact-card fi d4">
+      <img src="Markus.jpeg" alt="Markus Hjertqvist" class="contact-avatar-img">
+      <div class="contact-info">
+        <div class="contact-name">Markus Hjertqvist</div>
+        <div class="contact-title">ParkSign &nbsp;·&nbsp; Ansvarig säljare</div>
+        <div class="contact-links">
+          <a href="mailto:markus.hjertqvist@viriba.se" class="contact-link">
+            markus.hjertqvist@viriba.se
+          </a>
+          <a href="tel:+46705357373" class="contact-link">
+            0705-35 73 73
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</main><!-- /main -->
+
+
+<!-- ══════════════════════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════════════════ -->
+<footer>
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <img src="logo_vit.png" alt="ParkSign" class="footer-logo" width="110" height="33">
+      <p>Digital kommunikation som driver försäljning och skapar nya intäkter
+         vid kommersiella parkeringar.</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="Sidfotnavigation">
+      <div class="footer-col">
+        <h5>Lösningen</h5>
+        <a href="#roi">Ekonomi &amp; ROI</a>
+        <a href="#referenser">Referenser</a>
+        <a href="#losningen">Vår lösning</a>
+        <a href="#faq">Vanliga frågor</a>
+      </div>
+      <div class="footer-col">
+        <h5>Kontakt</h5>
+        <a href="mailto:markus.hjertqvist@viriba.se">markus.hjertqvist@viriba.se</a>
+        <a href="tel:+46705357373">0705-35 73 73</a>
+        <a href="https://calendly.com/markus-hjertqvist-viriba/30min"
+           target="_blank" rel="noopener">Boka möte</a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="wrap">
+      <span>© 2026 ParkSign / Viriba AB. Alla rättigheter förbehållna.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Calendly widget JS (lazy loaded) -->
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+<!-- Main script -->
+<script src="script.js"></script>
+
+</body>
+</html>
