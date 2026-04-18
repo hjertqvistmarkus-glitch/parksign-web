@@ -77,9 +77,8 @@ ul, ol { list-style: none; }
 }
 
 section {
-  padding: 112px 5vw;
+  padding: 88px 5vw;
   position: relative;
-  overflow: hidden;
 }
 
 /* ─── TYPOGRAPHY ─────────────────────────────────────────── */
@@ -614,6 +613,7 @@ em { color: var(--green); font-style: normal; }
 #roi h2,
 #roi h3,
 #roi h4 { color: var(--text-d); }
+#investering em { color: var(--green-d); }
 #stats-bar h2,
 #stats-bar h3 { color: var(--text-d); }
 
@@ -893,6 +893,68 @@ em { color: var(--green); font-style: normal; }
 
 /* (Modal removed – references are no longer clickable) */
 
+/* ─── Reference card quote ─── */
+.ref-quote {
+  margin-top: 10px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255,255,255,.07);
+  font-size: 13px;
+  color: var(--muted);
+  font-style: italic;
+  line-height: 1.65;
+}
+.ref-quote-author {
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  font-style: normal;
+  color: rgba(255,255,255,.32);
+}
+
+/* ─── Advertiser logos bar ─── */
+.advertiser-bar {
+  margin-top: 56px;
+  padding-top: 44px;
+  border-top: 1px solid var(--bord);
+  text-align: center;
+}
+.advertiser-bar-title {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.22);
+  margin-bottom: 24px;
+}
+.advertiser-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px 20px;
+}
+.advertiser-logo-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 18px;
+  border-radius: 8px;
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.08);
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(255,255,255,.22);
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: color .2s, border-color .2s;
+}
+.advertiser-logo-pill:hover {
+  color: rgba(255,255,255,.40);
+  border-color: rgba(255,255,255,.15);
+}
+
 /* ═══════════════════════════════════════════════════════════
    LÖSNINGEN
 ═══════════════════════════════════════════════════════════ */
@@ -969,6 +1031,142 @@ em { color: var(--green); font-style: normal; }
 .sol-cta-text p {
   font-size: 13px;
   color: var(--muted);
+}
+
+/* ═══════════════════════════════════════════════════════════
+   INVESTERING / PRIS
+═══════════════════════════════════════════════════════════ */
+#investering { background: var(--off); overflow: hidden; }
+#investering h2,
+#investering h3,
+#investering h4 { color: var(--text-d); }
+#investering .lead-d { color: var(--text-m); }
+
+.pris-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 24px;
+  margin-top: 48px;
+  align-items: start;
+}
+
+/* Price highlight card */
+.pris-price-card {
+  background: var(--ink);
+  border: 1px solid var(--bord2);
+  border-radius: var(--rL);
+  padding: 44px 36px;
+  text-align: center;
+  position: sticky;
+  top: calc(var(--nav-h) + 20px);
+}
+.pris-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+.pris-amount {
+  font-size: clamp(46px, 5.5vw, 72px);
+  font-weight: 900;
+  color: var(--white);
+  letter-spacing: -3px;
+  line-height: 1;
+}
+.pris-amount span {
+  font-size: .38em;
+  font-weight: 700;
+  color: var(--muted);
+  letter-spacing: 0;
+}
+.pris-excl {
+  font-size: 12px;
+  color: rgba(255,255,255,.28);
+  margin-top: 8px;
+}
+hr.pris-divider {
+  border: none;
+  border-top: 1px solid var(--bord);
+  margin: 24px 0;
+}
+.pris-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+.pris-meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13.5px;
+  gap: 12px;
+}
+.pris-meta-row .pris-meta-key { color: var(--muted); }
+.pris-meta-row .pris-meta-val { color: var(--green); font-weight: 700; white-space: nowrap; }
+
+/* Includes card */
+.pris-includes-card {
+  background: var(--white);
+  border: 1px solid var(--bord-l);
+  border-radius: var(--rL);
+  padding: 36px 36px 40px;
+}
+.pris-includes-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-d);
+  margin-bottom: 22px;
+}
+.pris-includes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pris-includes-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--text-d);
+  line-height: 1.45;
+}
+.pris-includes-list li svg {
+  color: var(--green);
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+}
+.pris-excl-note {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid var(--bord-l);
+  font-size: 13px;
+  color: var(--text-s);
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  line-height: 1.5;
+}
+.pris-excl-note svg { flex-shrink: 0; margin-top: 1px; }
+
+.pris-cta {
+  margin-top: 36px;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .pris-layout { grid-template-columns: 1fr; }
+  .pris-price-card { position: static; }
+}
+@media (max-width: 600px) {
+  .pris-price-card { padding: 32px 24px; }
+  .pris-includes-card { padding: 28px 24px 32px; }
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -1173,6 +1371,29 @@ em { color: var(--green); font-style: normal; }
   #kalkyl { padding: 52px 0; }
   .kalkyl-card { padding: 36px 24px 28px; }
   .kalkyl-card-header h3 { font-size: 18px; }
+}
+
+/* ─── Urgency / scarcity notice ─── */
+.urgency-notice {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 22px;
+  background: rgba(0,193,124,.07);
+  border: 1px solid rgba(0,193,124,.20);
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255,255,255,.65);
+  line-height: 1.5;
+  margin-bottom: 8px;
+  max-width: 560px;
+  text-align: left;
+}
+.urgency-notice svg {
+  flex-shrink: 0;
+  color: var(--green);
+  margin-top: 1px;
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -1391,13 +1612,29 @@ footer {
 .footer-col a:hover { color: var(--white); }
 
 .footer-bottom {
-  padding: 24px 0;
+  padding: 20px 0;
+}
+.footer-bottom-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px 20px;
   text-align: center;
 }
-.footer-bottom span {
+.footer-bottom span,
+.footer-legal-info {
   font-size: 12px;
   color: rgba(255,255,255,.18);
 }
+.footer-legal-link {
+  font-size: 12px;
+  color: rgba(255,255,255,.28);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color .2s;
+}
+.footer-legal-link:hover { color: rgba(255,255,255,.55); }
 
 /* ═══════════════════════════════════════════════════════════
    RESPONSIVE – TABLET (≤ 1024px)
