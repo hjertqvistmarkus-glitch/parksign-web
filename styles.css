@@ -563,6 +563,10 @@ em { color: var(--green); font-style: normal; }
   filter: none;
   border-radius: 4px;
 }
+.proof-logo-ica {
+  filter: none;
+  opacity: .9;
+}
 
 /* ═══════════════════════════════════════════════════════════
    STATS BAR
