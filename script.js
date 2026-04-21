@@ -9,6 +9,8 @@
    1. SCROLL FADE-IN  (Intersection Observer)
 ════════════════════════════════════════════════════════════ */
 (function initFadeIn() {
+  // rootMargin '0px 0px 200px 0px' triggar animationen 200px INNAN elementet
+  // rullar in i viewporten – eliminerar dead zones vid snabb scrollning.
   const io = new IntersectionObserver(
     entries => {
       entries.forEach(entry => {
@@ -18,10 +20,24 @@
         }
       });
     },
-    { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    { threshold: 0, rootMargin: '0px 0px 200px 0px' }
   );
 
   document.querySelectorAll('.fi').forEach(el => io.observe(el));
+
+  // Fallback: fångar element som IO missade vid mycket snabb scrollning.
+  // Kontrollerar vid varje scroll om osynliga .fi-element är i eller ovanför
+  // viewporten och avslöjar dem direkt.
+  function revealMissed() {
+    const cutoff = window.innerHeight + 200;
+    document.querySelectorAll('.fi:not(.v)').forEach(el => {
+      if (el.getBoundingClientRect().top < cutoff) {
+        el.classList.add('v');
+      }
+    });
+  }
+  window.addEventListener('scroll', revealMissed, { passive: true });
+  revealMissed(); // kör direkt vid sidladdning
 })();
 
 
